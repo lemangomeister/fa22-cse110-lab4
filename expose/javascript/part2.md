@@ -14,4 +14,7 @@
 13. (a) 32, **+** concatenates instead of adding; (b) 1, **-** treats both operands as integers; (c) 3, **null** is synonymous to 0 in this case; (d) 3null, **+** converts both operands to string and concatenates them if at least one of the operands is a string; (e) 4, **true** is converted to integer value of 1 and added to 3; (f) 0, **false** and **null** are both equal to 0; (g) 3undefined, one operand is a string and the other is converted to string; (h) NaN, **undefined** has a numerical value of **NaN**, any arithmetic operations involving **undefined** will result in **NaN**
 14. (a) true, comparing values of different types converts the values to numbers; (b) false, both operands are strings so the comparator compares them in lexicographical order, '2' is greater than '12', alphabetically; (c) true, same reason as (a); (d) false, **===** strict equality operator compares two values without type conversion; (e) false, **true** is converted to **1** and the resulting equality is false; (f) true, Boolean(x), where x is any number > 0, is true
 15. **==** performs type conversion *then* performs equality check. Meanwhile, **===** only checks for equality *without* doing any type conversions beforehand.
-16. 
+16. part2-question16.js
+17. 2,4,6; **modifyArray** pushes values from **array** into **newArr**, then the **callback** function does its job when values are already in **newArr**
+18. part2-question18.js
+19. 1 4 3 2
